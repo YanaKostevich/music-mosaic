@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'Quicksand';
+    src: local('Quicksand-Regular'), local('Quicksand-Regular'),
+      url('~@/assets/fonts/Quicksand-Regular.woff2') format('woff2'),
+      url('~@/assets/fonts/Quicksand-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+$main-color: red;
