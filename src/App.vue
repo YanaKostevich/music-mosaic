@@ -8,4 +8,5 @@
 
 <style>
 @import "./assets/style/styles.scss";
+@import "./assets/style/zero.scss";
 </style>

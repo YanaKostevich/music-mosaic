@@ -4,12 +4,11 @@
       <div class="header">
         <div class="logo">MusicMosaic</div>
         <div class="menu-btn">
-          <ul>
-            <li>
+          <BurgerMenu right />
+          <!-- <li>
               <router-link to="/">Home</router-link>
               <router-link to="/about">About</router-link>
-            </li>
-          </ul>
+            </li> -->
         </div>
       </div>
       <video
@@ -25,14 +24,21 @@
 </template>
 
 <script>
+import BurgerMenu from "./BurgerMenu.vue";
 export default {
   name: "Header",
+  components: {
+    BurgerMenu,
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 header {
+  padding-top: 50px;
+  width: 80%;
+  margin: 0 auto;
   .header {
     display: flex;
     justify-content: space-between;
@@ -43,15 +49,6 @@ header {
       color: antiquewhite;
     }
     .menu-btn {
-      ul {
-        li {
-          a {
-            font-family: "Quicksand";
-            font-size: 20px;
-            color: antiquewhite;
-          }
-        }
-      }
     }
   }
 }
